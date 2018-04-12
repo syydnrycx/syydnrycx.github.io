@@ -92,9 +92,9 @@
 <meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po1-4.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po1-5.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po1-6.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po1-7.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po1-8.png">
-<meta property="og:updated_time" content="2018-04-12T13:35:20.610Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po-1-7.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po-1-8.png">
+<meta property="og:updated_time" content="2018-04-12T13:42:47.483Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于stm32f030水温控制2">
 <meta name="twitter:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制2/po-1-1.jpg">
@@ -367,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  544
+                  523
                 </span>
               
 
@@ -405,14 +405,11 @@
 
       
         <p><img src="/2018/04/12/基于stm32f030水温控制2/po-1-1.jpg" alt=""><br><a id="more"></a></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="EC11预备知识"><a href="#EC11预备知识" class="headerlink" title="EC11预备知识"></a>EC11预备知识</h2><h2 id="EC11配置"><a href="#EC11配置" class="headerlink" title="EC11配置"></a>EC11配置</h2><h2 id="按键配置"><a href="#按键配置" class="headerlink" title="按键配置"></a>按键配置</h2><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p><strong>一、前言</strong></p>
-<p>  承接上一篇的水温控制,这一篇我们把控制设定温度的旋转编码器EC11讲一下.</p>
-<p><strong>二、EC11预备知识</strong></p>
-<p>  EC11旋转编码器是一种小型高精度旋转式编码器,在结构上,由编码器部分和按键部分组合而成,这里我用到了EC11A相和B相与一个按键.我们需要编写的就是如何判断旋转的方向与按键的检测.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  承接上一篇的水温控制,这一篇我们把控制设定温度的旋转编码器EC11讲一下.</p>
+<h2 id="EC11预备知识"><a href="#EC11预备知识" class="headerlink" title="EC11预备知识"></a>EC11预备知识</h2><p>  EC11旋转编码器是一种小型高精度旋转式编码器,在结构上,由编码器部分和按键部分组合而成,这里我用到了EC11A相和B相与一个按键.我们需要编写的就是如何判断旋转的方向与按键的检测.</p>
 <p><img src="/2018/04/12/基于stm32f030水温控制2/po1-1.png" alt=""></p>
 <p>  从图中我们可以看出,假设检测A相上升沿,我们只需判断B相的高低电平就可以知道旋转的是正向或是逆向,知道了如何检测,配置就方便多了,接下来我们讲一下如何配置.</p>
-<p><strong>三、EC11配置</strong></p>
-<p><img src="/2018/04/12/基于stm32f030水温控制2/po1-2.png" alt=""></p>
+<h2 id="EC11配置"><a href="#EC11配置" class="headerlink" title="EC11配置"></a>EC11配置</h2><p><img src="/2018/04/12/基于stm32f030水温控制2/po1-2.png" alt=""></p>
 <p>  时钟配置这边由于我的A相B相和按键所在IO都在PA上,所以我打开了GPIOA的时钟,由于需要映射中断管脚,所以开启了SYSCFG时钟.</p>
 <p><img src="/2018/04/12/基于stm32f030水温控制2/po1-3.png" alt=""></p>
 <p>  管脚配置这边,直接配置IO为上拉输入,这里有别与F1系列的我上一篇已经讲过了.这里就不多说了</p>
@@ -421,13 +418,11 @@
 <p><img src="/2018/04/12/基于stm32f030水温控制2/po1-5.png" alt=""></p>
 <p>  最后设置一下中断优先级就可以了.</p>
 <p><img src="/2018/04/12/基于stm32f030水温控制2/po1-6.png" alt=""></p>
-<p><strong>四、按键配置</strong></p>
-<p>  按键的配置其实上面已经有了,这里我们讲一下如何检测按键,通常扫按键的方法都是延时10ms,但是这种方式延时,不一定能达到我们要的效果.所以这里我介绍一下状态机按键消抖的方式.</p>
-<p><img src="/2018/04/12/基于stm32f030水温控制2/po1-7.png" alt=""></p>
-<p><img src="/2018/04/12/基于stm32f030水温控制2/po1-8.png" alt=""></p>
+<h2 id="按键配置"><a href="#按键配置" class="headerlink" title="按键配置"></a>按键配置</h2><p>  按键的配置其实上面已经有了,这里我们讲一下如何检测按键,通常扫按键的方法都是延时10ms,但是这种方式延时,不一定能达到我们要的效果.所以这里我介绍一下状态机按键消抖的方式.</p>
+<p><img src="/2018/04/12/基于stm32f030水温控制2/po-1-7.png" alt=""></p>
+<p><img src="/2018/04/12/基于stm32f030水温控制2/po-1-8.png" alt=""></p>
 <p>  通过上面的状态跳转,实现判断按键抬起、长按、连按,相比延时扫描按键的方法,好了很多.</p>
-<p><strong>五、结语</strong></p>
-<p>  这里简单的讲了EC11AB相的检测以及按键的扫描方法,如果文中有哪些错误,希望你能给我发邮件告知,感激不尽.</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>  这里简单的讲了EC11AB相的检测以及按键的扫描方法,如果文中有哪些错误,希望你能给我发邮件告知,感激不尽.</p>
 
       
     </div>

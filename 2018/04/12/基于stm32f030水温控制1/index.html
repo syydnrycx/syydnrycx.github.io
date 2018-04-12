@@ -85,16 +85,16 @@
 <meta property="og:url" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/index.html">
 <meta property="og:site_name" content="Syydnrycx">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/po-1-1.jpg">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/1.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/2.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/3.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/4.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/5.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/po-1-1.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/5.png">
 <meta property="og:updated_time" content="2018-04-12T07:07:33.310Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于stm32f030水温控制1">
-<meta name="twitter:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/基于stm32f030水温控制1/po-1-1.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/12/基于stm32f030水温控制1/po-1-1.jpg">
 
 
 
@@ -370,7 +370,7 @@
       
 
       
-        <p><img src="基于stm32f030水温控制1/po-1-1.jpg" alt=""><br><a id="more"></a></p>
+        <p><img src="/2018/04/12/基于stm32f030水温控制1/po-1-1.jpg" alt=""><br><a id="more"></a></p>
 <ul>
 <li>1 前言</li>
 <li>2 LED和蜂鸣器的配置</li>
@@ -383,15 +383,15 @@
 <p>　LED或者是蜂鸣器(BEEP)基本上是我们学习32的基础,配置这方面十分简单,所以我会简单的略过一些配置.</p>
 <p>  我的板上LED和蜂鸣器与单片机相连的IO口有三个,分别是LED1-PA11 LED2-PA12 BEEP-PA0,接下来我们就说一下如何配置.</p>
 <p>  首先,我们需要定义GPIO结构体与PA口的时钟,这里有别与F1系列的配置,F0PA口上的时钟是在AHB总线上,而F1PA口上的时钟是APB2,所以这里我们要区分一下,否则会报错.</p>
-<p><img src="基于stm32f030水温控制1/1.png" alt=""></p>
+<p><img src="/2018/04/12/基于stm32f030水温控制1/1.png" alt=""></p>
 <p>  配置完时钟,我们就可以对IO口进行配置了,这里我设置了IO口为推挽输出,速度为50MHz,</p>
-<p><img src="基于stm32f030水温控制1/2.png" alt=""><br>  这里要强调的是,F0区别与F1的是,IO口配置这边,不能直接像F1一样推挽和输出是同时配置的,F0是分别配置的,还有就是右击IO口速度那里,我们可以看到:</p>
-<p><img src="基于stm32f030水温控制1/3.png" alt=""></p>
-<p><img src="基于stm32f030水温控制1/4.png" alt=""></p>
+<p><img src="/2018/04/12/基于stm32f030水温控制1/2.png" alt=""><br>  这里要强调的是,F0区别与F1的是,IO口配置这边,不能直接像F1一样推挽和输出是同时配置的,F0是分别配置的,还有就是右击IO口速度那里,我们可以看到:</p>
+<p><img src="/2018/04/12/基于stm32f030水温控制1/3.png" alt=""></p>
+<p><img src="/2018/04/12/基于stm32f030水温控制1/4.png" alt=""></p>
 <p>  可以看出,如果我们使用GPIO_Speed_Level_3也可以代替GPIO_Speed_50MHz,可以更直观的看出IO口速度,具体怎样选择,还是得看个人选择.</p>
 <p>  最后,在配置一下GPIO_Init函数就基本配置完成.</p>
 <p>  那么,我们如何使得LED翻转呢,这里就可以用到GPIO_SetBits和GPIO_ResetBits两个函数,不过我还是喜欢用F1的位带操作.所以等一下,我们讲一下如何配置F0来实现位带操作.</p>
-<p><img src="基于stm32f030水温控制1/5.png" alt=""></p>
+<p><img src="/2018/04/12/基于stm32f030水温控制1/5.png" alt=""></p>
 <p><strong>三、位带操作的配置</strong></p>
 <p>  位带操作,可以使我们输出高低电平时给1or0来实现,这样可以方便我们操控IO口,而且方便快捷,如果用操作函数的方式,翻转IO口就有点麻烦,所以这里我们设置下位带操作.</p>
 <p>  我们可以在所在的工程中添加stm32f0xx_sys.h的头文件来存放,当我们需要使用位带操作时,直接调用就可以了.</p>

@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Life-long learning">
+<meta name="description" content="Hey, I hope you like me.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="Syydnrycx">
-<meta property="og:description" content="Life-long learning">
+<meta property="og:description" content="Hey, I hope you like me.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-12T23:34:30.693Z">
+<meta property="og:updated_time" content="2018-04-12T23:44:26.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Life-long learning">
+<meta name="twitter:description" content="Hey, I hope you like me.">
 
 
 
@@ -278,6 +278,10 @@
 	<h1 class="post-title" itemprop="name headline">about</h1>
 
 
+	<div class="post-meta">
+		<div class="post-description">Hey, I hope you like me.</div>
+	</div>
+
 
 </header>
 
@@ -288,6 +292,64 @@
         
         
           
+<div class="zh post-container">
+
+    <!--copied from markdown -->
+    <blockquote><p>人生犹如一本书,愚蠢者草草翻过,<br>
+    聪明人细细阅读,为何如此,因为他们只能读它一次. --保罗</p></blockquote>
+
+    <p>Hey，我是<strong>syydnrycx</strong>，是一个电子信息工程专业的苦逼学生党。</p>
+
+    <p></p>
+    
+    <h5>About me</h5>
+
+    <ul>
+        <li><a href="https://github.com/syydnrycx" target="_blank" rel="noopener">My GitHub</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+
+
+
         
       </div>
       
@@ -329,8 +391,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -401,6 +472,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">About me</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

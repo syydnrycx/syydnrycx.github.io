@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="stm32," />
 
 
 
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Life-long learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="keywords" content="stm32">
+<meta property="og:type" content="article">
+<meta property="og:title" content="stm32AD采样滤波之中位值平均滤波">
+<meta property="og:url" content="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/index.html">
 <meta property="og:site_name" content="Syydnrycx">
-<meta property="og:description" content="Life-long learning">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-13T01:20:58.150Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/post.png">
+<meta property="og:updated_time" content="2018-04-13T04:43:31.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="Life-long learning">
+<meta name="twitter:title" content="stm32AD采样滤波之中位值平均滤波">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/post.png">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/"/>
 
 
 
 
 
-  <title>tags | Syydnrycx</title>
+  <title>stm32AD采样滤波之中位值平均滤波 | Syydnrycx</title>
   
 
 
@@ -280,40 +280,302 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Syydnrycx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Syydnrycx">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 1 个标签
+          <h1 class="post-title" itemprop="name headline">stm32AD采样滤波之中位值平均滤波</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-13T12:30:13+08:00">
+                2018-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/stm32/" itemprop="url" rel="index">
+                    <span itemprop="name">stm32</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/13/stm32AD采样滤波之中位值平均滤波/" class="leancloud_visitors" data-flag-title="stm32AD采样滤波之中位值平均滤波">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  473
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/stm32/" style="font-size: 12px; color: #ccc">stm32</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p><img src="/2018/04/13/stm32AD采样滤波之中位值平均滤波/post.png" alt=""><br><a id="more"></a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>  水温中,我们说到了为了防止AD波动使得送入表中查到的温度上下跳动,那么怎么坐到防止AD波动大呢,这就需要我们的滤波算法了.</p>
+<p>  相信很多初学者,一开始学习ADC时,都是用的均值滤波，取十次值求平均,这种滤波方式如果AD跳动略快就会不精准,所以这里我提供了另一种滤波的方式.</p>
+<h1 id="滤波算法"><a href="#滤波算法" class="headerlink" title="滤波算法"></a>滤波算法</h1><h2 id="滤波讲解"><a href="#滤波讲解" class="headerlink" title="滤波讲解"></a>滤波讲解</h2><p>  <code>先对AD取N次值(N为奇数),对AD采样值进行排序,然后去掉一个最大与一个最小，计算N-2个数据的算术平均值，这个值作为本次AD的实际采样值</code></p>
+<p>  这个方法结合了普通均值滤波的优点,又在它的基础上提高了精度，通过排序去掉了最小与最大,但是在提高的精度的前提,<code>是十分浪费CPU的</code>.</p>
+<p>  不过这对于stm32资源丰富的芯片来说,这个滤波方法不失为一个提升AD精度的方式.</p>
+<h2 id="滤波算法-1"><a href="#滤波算法-1" class="headerlink" title="滤波算法"></a>滤波算法</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 13</span></span><br><span class="line"></span><br><span class="line"><span class="function">u16 <span class="title">Get_Adc_Average</span><span class="params">(u8 ch)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    u16 value_buf[N];</span><br><span class="line">	u16 temp;</span><br><span class="line">	u8 count, i, j;</span><br><span class="line">	<span class="keyword">for</span> (count=<span class="number">0</span>; count&lt;N; count++)</span><br><span class="line">	&#123;</span><br><span class="line">		value_buf[count] = Get_Adc(ch);</span><br><span class="line">		delay_ms(<span class="number">5</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (j=<span class="number">0</span>; j&lt;N<span class="number">-1</span>; j++)		<span class="comment">//冒泡排序</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (i=<span class="number">0</span>; i&lt;N-j<span class="number">-1</span>; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (value_buf[i] &gt; value_buf[i+<span class="number">1</span>])</span><br><span class="line">			&#123;</span><br><span class="line">				temp = value_buf[i];</span><br><span class="line">				value_buf[i] = value_buf[i+<span class="number">1</span>];</span><br><span class="line">				value_buf[i+<span class="number">1</span>] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	temp = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (count=<span class="number">1</span>; count&lt;N<span class="number">-1</span>; count++)</span><br><span class="line">	&#123;</span><br><span class="line">		temp += value_buf[count];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> temp/(N<span class="number">-2</span>);<span class="comment">//把N次采样值按大小排列 ，取中间值为本次有效值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>  <code>滤波算法有很多种,这只是其中的一种,不同的滤波方式适用与不同的环境,所以怎么选择一个滤波方式,还是要根据使用的实际情况.</code></p>
+
       
     </div>
     
     
     
+	
+	<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/04/13/stm32AD采样滤波之中位值平均滤波/">stm32AD采样滤波之中位值平均滤波</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Syydnrycx 的个人博客">Syydnrycx</a></p>
+  <p><span>发布时间:</span>2018年04月13日 - 12:04</p>
+  <p><span>最后更新:</span>2018年04月13日 - 12:04</p>
+  <p><span>原始链接:</span><a href="/2018/04/13/stm32AD采样滤波之中位值平均滤波/" title="stm32AD采样滤波之中位值平均滤波">http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/04/13/stm32AD采样滤波之中位值平均滤波/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+      
+	</div>
+	
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束,感谢您的阅读-------------</div>
+    
+</div>
+	  
+	</div>
+	
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Syydnrycx wechat" style="width: 200px; max-width: 100%;"/>
+    <div>扫一扫,关注我的微信公众号吧!</div>
+</div>
+
+      </div>
+    
+	
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.png" alt="Syydnrycx 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Syydnrycx 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/stm32/" rel="tag"><i class="fa fa-tag"></i> stm32</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/13/stm32f030水温控制-完/" rel="next" title="stm32f030水温控制(完)">
+                <i class="fa fa-chevron-left"></i> stm32f030水温控制(完)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -322,6 +584,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTE4Ni83NzM1"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -342,8 +613,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -423,6 +703,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#滤波算法"><span class="nav-number">2.</span> <span class="nav-text">滤波算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#滤波讲解"><span class="nav-number">2.1.</span> <span class="nav-text">滤波讲解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#滤波算法-1"><span class="nav-number">2.2.</span> <span class="nav-text">滤波算法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -615,6 +911,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

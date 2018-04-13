@@ -100,7 +100,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/04/13/Java开发环境安装及环境变量配置/12.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/13/Java开发环境安装及环境变量配置/13.png">
 <meta property="og:image" content="http://yoursite.com/2018/04/13/Java开发环境安装及环境变量配置/14.png">
-<meta property="og:updated_time" content="2018-04-13T05:41:02.100Z">
+<meta property="og:updated_time" content="2018-04-13T05:45:13.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java开发环境安装及环境变量配置">
 <meta name="twitter:image" content="http://yoursite.com/2018/04/13/Java开发环境安装及环境变量配置/post.jpg">
@@ -468,18 +468,20 @@
 <p>  在弹出来的系统属性中,我们打开环境变量.</p>
 <p><img src="/2018/04/13/Java开发环境安装及环境变量配置/10.png" alt=""></p>
 <p>  这里我们在系统变量中添加</p>
-<p>变量名: ==JAVA_HOME==<br>变量值: ==C:\Program Files\Java\jdk1.8.0_162==</p>
+<p>变量名: <strong>JAVA_HOME</strong><br>变量值: <strong>C:\Program Files\Java\jdk1.8.0_162</strong></p>
 <p><img src="/2018/04/13/Java开发环境安装及环境变量配置/11.png" alt=""></p>
 <p>  接下来,在系统变量中寻找”Path”变量,如果不存在,则新建变量”Path”,如果存在,则选中编辑它.</p>
 <p>  在变量值最前面,添加:</p>
-<p>==%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;==</p>
+<p><strong>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</strong></p>
 <p><img src="/2018/04/13/Java开发环境安装及环境变量配置/12.png" alt=""></p>
 <p>  添加完后,确认,在系统变量中寻找”CLASSPATH”,和上面一样,如果存在则编辑,不存在则新建,</p>
-<p>变量名: ==CLASSPATH==<br>变量值: ==%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;==</p>
+<p>变量名: <strong>CLASSPATH</strong><br>变量值: <strong>%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</strong></p>
 <p><img src="/2018/04/13/Java开发环境安装及环境变量配置/13.png" alt="">  </p>
 <p>  全部添加好后,我们点击确定,回到桌面,win+R输入cmd,打开cmd命令窗口,</p>
 <p>输入以下命令:</p>
-<p>java -version<br>javac -version<br>set JAVA_HOME</p>
+<p><code>java -version
+javac -version
+set JAVA_HOME</code></p>
 <p>输出窗口如下信息,即为配置成功:</p>
 <p><img src="/2018/04/13/Java开发环境安装及环境变量配置/14.png" alt="">  </p>
 <h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p> <code>配置环境变量最重要的是细心,如果少一个标点符号都有可能导致后面验证窗口信息失败,所以请准确的安装步骤来配置.</code></p>

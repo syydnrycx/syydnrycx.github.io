@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="stm32," />
+  <meta name="keywords" content="stm8," />
 
 
 
@@ -79,18 +79,21 @@
 
 
 
-<meta name="keywords" content="stm32">
+<meta name="keywords" content="stm8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="stm32f030水温控制(完)">
-<meta property="og:url" content="http://yoursite.com/2018/04/13/stm32f030水温控制-完/index.html">
+<meta property="og:title" content="stm8学习笔记-串口">
+<meta property="og:url" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/index.html">
 <meta property="og:site_name" content="Syydnrycx">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/04/13/stm32f030水温控制-完/po.png">
-<meta property="og:image" content="http://yoursite.com/2018/04/13/stm32f030水温控制-完/po-1.png">
-<meta property="og:updated_time" content="2018-04-13T04:10:10.630Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/4.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/5.png">
+<meta property="og:updated_time" content="2018-04-15T05:30:54.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="stm32f030水温控制(完)">
-<meta name="twitter:image" content="http://yoursite.com/2018/04/13/stm32f030水温控制-完/po.png">
+<meta name="twitter:title" content="stm8学习笔记-串口">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/15/stm8学习笔记-串口/1.jpg">
 
 
 
@@ -120,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/13/stm32f030水温控制-完/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/15/stm8学习笔记-串口/"/>
 
 
 
 
 
-  <title>stm32f030水温控制(完) | Syydnrycx</title>
+  <title>stm8学习笔记-串口 | Syydnrycx</title>
   
 
 
@@ -293,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/13/stm32f030水温控制-完/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/stm8学习笔记-串口/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Syydnrycx">
@@ -310,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">stm32f030水温控制(完)</h1>
+          <h1 class="post-title" itemprop="name headline">stm8学习笔记-串口</h1>
         
 
         <div class="post-meta">
@@ -322,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-13T11:12:40+08:00">
-                2018-04-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T13:04:22+08:00">
+                2018-04-15
               </time>
             
 
@@ -345,8 +348,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/stm32/" itemprop="url" rel="index">
-                    <span itemprop="name">stm32</span>
+                  <a href="/categories/stm8/" itemprop="url" rel="index">
+                    <span itemprop="name">stm8</span>
                   </a>
                 </span>
 
@@ -362,7 +365,7 @@
 
           
           
-             <span id="/2018/04/13/stm32f030水温控制-完/" class="leancloud_visitors" data-flag-title="stm32f030水温控制(完)">
+             <span id="/2018/04/15/stm8学习笔记-串口/" class="leancloud_visitors" data-flag-title="stm8学习笔记-串口">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -392,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  816
+                  945
                 </span>
               
 
@@ -408,7 +411,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  4
                 </span>
               
             </div>
@@ -429,35 +432,21 @@
       
 
       
-        <p><img src="/2018/04/13/stm32f030水温控制-完/po.png" alt=""></p>
-<a id="more"></a>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>  前面的子模块的基本配置已经讲过了,这一篇算是完结篇了,本篇只讲大致如何实现各模块组合实现水温控制,程序子模块都已经有了,剩下的只是把子模块整合在一起,实现一个具体的功能.</p>
-<h1 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h1><h2 id="程序框架"><a href="#程序框架" class="headerlink" title="程序框架"></a>程序框架</h2><p>  首先你得确保你的子模块单独运行时没有错误,可以实现单独的功能,如果连基本的独立工作的功能都无法实现,整合就谈不上了.</p>
-<p><img src="/2018/04/13/stm32f030水温控制-完/po-1.png" alt=""></p>
-<h2 id="框架讲解"><a href="#框架讲解" class="headerlink" title="框架讲解"></a>框架讲解</h2><h2 id="再次提醒一下-一定要确保你每个子模块都能独立运行"><a href="#再次提醒一下-一定要确保你每个子模块都能独立运行" class="headerlink" title="  再次提醒一下,一定要确保你每个子模块都能独立运行"></a>  <code>再次提醒一下,一定要确保你每个子模块都能独立运行</code></h2><ol>
-<li>确保你的系统能有一个1s翻转1次的LED指示灯(确保程序在运行)</li>
-<li>通过定义变量获取AD值,输入滤波算法得到滤波后的AD值(确保精准)</li>
-<li>滤波后的AD最好尽量精准平稳,因为可以确保查表后温度跳动不会特别明显.</li>
-<li>EC11确认能通过左旋右旋控制设定的温度值,并且要保证EC11按键精准可控,并且将设定的温度与实际温度分别显示在数码管中.</li>
-<li>将获取的实际温度与设定温度传入pid算法,并且通过pid参数整定不断调整到系统最佳.</li>
-<li>将Pid的输出通过改变PWM实现控温效果.</li>
-</ol>
-<h2 id="时间要求"><a href="#时间要求" class="headerlink" title="时间要求"></a>时间要求</h2><hr>
-<p> 1.LED – 1S翻转(有两个指示灯,建议一个用来做系统运行指示灯,另一个调试用)<br> 2.AD采集 – 10ms-50ms采集一次.</p>
-<ol start="3">
-<li>查表获取温度 – 30-60ms查一次表(使得数码管显示的实际温度不会跳变太快)</li>
-<li>对实际温度与设定温度进行运算送入数码管 – 300ms(同上,使得数码管跳变不会太快)</li>
-<li>数码管动态扫描 – 0.01ms扫描一次(确保数码管不会亮度太暗,或者人眼可以看见跳动)</li>
-<li>pid运算 – 建议直接放在while(反馈系统一直在线)</li>
-</ol>
-<h2 id="模块整合"><a href="#模块整合" class="headerlink" title="模块整合"></a>模块整合</h2><p>  建议通过上述框架一点点加入子模块,确保每次加入子模块后程序还能继续运行.</p>
-<p>  通过程序框图,与每个模块执行认为的时间,基本可以实现控温,这里需要提醒的是,最好不要阻塞程序运行,否则效率会低.</p>
-<p>  模块整合这边不会贴出代码,只给出了思路,至于怎么整合,只要稍微有C语言的基础,都能对程序逻辑做出很好的实现,程序子模块都确保可以运行,剩下的基本就是逻辑方面上的问题了.</p>
-<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p>  实际效果可参考：<br>  <a href="http://v.youku.com/v_show/id_XMzUyODI5ODQwNA==.html?spm=a2h0j.11185381.0.0" target="_blank" rel="noopener">点击这儿</a><br>  <a href="http://v.youku.com/v_show/id_XMzUyODAxMjgxMg==.html?spm=a2hzp.8244740.0.0" target="_blank" rel="noopener">点击这儿</a></p>
-<p>  这里误差大概 -1 到 +1度之间.</p>
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>  上面视频里,温度跳动稍微有些快,后来做了修改:<br> 1.之前是10ms采集AD,后来修正为500ms采一次AD.<br> 2.PID参数微调.</p>
-<p>比上面效果会更好,但是没法上传.</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>  看到这里,水温控制已经完结了,如果你有什么疑问可以评论问我,我看到会尽量回复的.</p>
+        <p><img src="/2018/04/15/stm8学习笔记-串口/1.jpg" alt=""><br><a id="more"></a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>  在单片机中,串口是我们很多项目中离不开的功能,它可以帮助我们调试程序,打印信息,用两根线就可以实现收与发,所以这一篇,我们介绍一下串口的配置.</p>
+<h1 id="串口配置"><a href="#串口配置" class="headerlink" title="串口配置"></a>串口配置</h1><p>  配置串口前,要先说的是我配置的是串口3,并且用的是寄存器的方式配置的,所以在配置中有什么不理解的最好查手册</p>
+<p><img src="/2018/04/15/stm8学习笔记-串口/2.png" alt=""></p>
+<p>  首先,我们在.h中定义初始化函数<code>uart3_init(u32 bound)</code>, bound是要初始化的波特率.</p>
+<p>  然后我们看一下寄存器的配置:</p>
+<p><img src="/2018/04/15/stm8学习笔记-串口/3.png" alt=""></p>
+<p><img src="/2018/04/15/stm8学习笔记-串口/4.png" alt=""></p>
+<p><img src="/2018/04/15/stm8学习笔记-串口/5.png" alt=""></p>
+<p>  根据上面框起来的来配置寄存器,最后在通过<code>UART-&gt;BBR2与UART-&gt;BBR1</code>来写入波特率,后开启UART就可以了</p>
+<p>  具体的我们看下面程序.</p>
+<h1 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">uart3.h</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __UART3_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span>	__UART3_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stm8s.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> HSIClockFreq 16000000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> UART3_FLAG_TXE  (uint8_t)0x80 <span class="comment">//发送数据寄存器空标志 </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> UART3_FLAG_RXNE (uint8_t)0x20 <span class="comment">//读取数据寄存器非空标志</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> U3RxBufferSize 64</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">extern</span> u8 USART3_RX_BUF[U3RxBufferSize]; </span><br><span class="line"><span class="keyword">extern</span> u8 USART3_TX_BUF[U3RxBufferSize];</span><br><span class="line"><span class="keyword">extern</span> u8 USART3_RX_STA; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">uart3_init</span><span class="params">(u32 bound)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">UART3_SendByte</span><span class="params">(u8 data)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">UART3_SendString</span><span class="params">(u8* str)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">u3_printf</span><span class="params">(<span class="keyword">char</span>* fmt,...)</span></span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">uart3.h</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"uart3.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdarg.h"</span>	 	 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span>	 	 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"string.h"</span>	</span></span><br><span class="line"></span><br><span class="line">u8 USART3_TX_BUF[U3RxBufferSize];</span><br><span class="line">u8 USART3_RX_BUF[U3RxBufferSize];     <span class="comment">//接收缓冲,最大USART_REC_LEN个字节.</span></span><br><span class="line"><span class="comment">//接收状态</span></span><br><span class="line"><span class="comment">//bit15，	接收完成标志</span></span><br><span class="line"><span class="comment">//bit14，	接收到0x0d</span></span><br><span class="line"><span class="comment">//bit13~0，	接收到的有效字节数目</span></span><br><span class="line">u8 USART3_RX_STA=<span class="number">0</span>;       <span class="comment">//接收状态标记	</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">uart3_init</span><span class="params">(u32 bound)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="comment">//1位起始位 8位数据位 结束位由CR3设置 不使用奇偶校验 不使能奇偶校验中断</span></span><br><span class="line">  UART3-&gt;CR1 &amp;= <span class="number">0xE0</span>;</span><br><span class="line">  <span class="comment">//禁止发送中断和空闲中断， 使能发送和接收  使能接收中断</span></span><br><span class="line">  UART3-&gt;CR2 = (<span class="number">0</span>&lt;&lt;<span class="number">7</span>)|(<span class="number">0</span>&lt;&lt;<span class="number">6</span>)|(<span class="number">1</span>&lt;&lt;<span class="number">5</span>)|(<span class="number">0</span>&lt;&lt;<span class="number">4</span>)|(<span class="number">1</span>&lt;&lt;<span class="number">3</span>)|(<span class="number">1</span>&lt;&lt;<span class="number">2</span>);</span><br><span class="line">  <span class="comment">//禁止LIN模式， 设置1位停止位 不使能CLK时钟</span></span><br><span class="line">  UART3-&gt;CR3 &amp;= <span class="number">0x07</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">/*设置波特率*/</span></span><br><span class="line">  bound =HSIClockFreq/bound;  <span class="comment">/*求出分频因子*/</span></span><br><span class="line">  UART3-&gt;BRR2 = bound &amp; <span class="number">0x0f</span>;</span><br><span class="line">  UART3-&gt;BRR2 |= ((bound &amp; <span class="number">0xf000</span>) &gt;&gt; <span class="number">8</span>);</span><br><span class="line">  UART3-&gt;BRR1 = ((bound &amp; <span class="number">0x0ff0</span>) &gt;&gt; <span class="number">4</span>);    <span class="comment">/*先给BRR2赋值 最后再设置BRR1*/</span></span><br><span class="line">  </span><br><span class="line">  UART3-&gt;CR1 |= (<span class="number">0</span>&lt;&lt;<span class="number">5</span>);         <span class="comment">/*使能UART*/</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/******************************************************************</span></span><br><span class="line"><span class="comment">函数名称：void UART3_SendByte(u8 byte)</span></span><br><span class="line"><span class="comment">函数功能：串口发送单字节函数</span></span><br><span class="line"><span class="comment">入口参数：byte-待发送字节数据</span></span><br><span class="line"><span class="comment">返回值：  无</span></span><br><span class="line"><span class="comment">说明  ：  </span></span><br><span class="line"><span class="comment">*******************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">UART3_SendByte</span><span class="params">(u8 byte)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  UART3-&gt;DR=byte;</span><br><span class="line">  <span class="keyword">while</span> (!(UART3-&gt;SR &amp; <span class="number">0x80</span>));<span class="comment">//等待发送完成</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/******************************************************************</span></span><br><span class="line"><span class="comment">函数名称：void UART3_SendString(u8* str)</span></span><br><span class="line"><span class="comment">函数功能：串口发送字符串函数</span></span><br><span class="line"><span class="comment">入口参数：str-待发送字符串</span></span><br><span class="line"><span class="comment">返回值：  无</span></span><br><span class="line"><span class="comment">说明  ：  无   </span></span><br><span class="line"><span class="comment">*******************************************************************/</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">UART3_SendString</span><span class="params">(u8* str)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">while</span> (*str != <span class="string">'\0'</span>)</span><br><span class="line">  &#123;</span><br><span class="line">      UART3_SendByte(*str);	</span><br><span class="line">      str++;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">u3_printf</span><span class="params">(<span class="keyword">char</span>* fmt,...)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">	u16 i,j; </span><br><span class="line">	va_list ap; </span><br><span class="line">	va_start(ap,fmt);</span><br><span class="line">	<span class="built_in">vsprintf</span>((<span class="keyword">char</span>*)USART3_TX_BUF,fmt,ap);</span><br><span class="line">	va_end(ap);</span><br><span class="line">	i=<span class="built_in">strlen</span>((<span class="keyword">const</span> <span class="keyword">char</span>*)USART3_TX_BUF);		<span class="comment">//此次发送数据的长度</span></span><br><span class="line">	<span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;i;j++)							<span class="comment">//循环发送数据</span></span><br><span class="line">	&#123;</span><br><span class="line">	  <span class="keyword">while</span>(UART3_GetFlagStatus(UART3_FLAG_TC) ==RESET); <span class="comment">//循环发送,直到发送完毕   </span></span><br><span class="line">      UART3_SendData8(USART3_TX_BUF[j]); </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到了这一步,串口就基本OK了,但是我们还需要接受,这里就需要中断函数了</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">INTERRUPT_HANDLER(UART3_RX_IRQHandler, <span class="number">21</span>)</span><br><span class="line">&#123;</span><br><span class="line">  u8 res;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (UART3-&gt;SR &amp; UART3_FLAG_RXNE)<span class="comment">//接收中断(接收到的数据必须是0x0d 0x0a结尾)</span></span><br><span class="line">  &#123;</span><br><span class="line">    res = (u8)UART3-&gt;DR;<span class="comment">//读取接收到的数据</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> ((USART3_RX_STA &amp; <span class="number">0x80</span>) == <span class="number">0</span>)<span class="comment">//接收未完成</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span> (USART3_RX_STA &amp; <span class="number">0x40</span>)<span class="comment">//接收到了0x0d</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (res != <span class="number">0x0A</span>)<span class="comment">//接收错误,重新开始</span></span><br><span class="line">        &#123;</span><br><span class="line">          USART3_RX_STA = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span><span class="comment">//接收完成 </span></span><br><span class="line">        &#123;</span><br><span class="line">          USART3_RX_STA|= <span class="number">0x80</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span><span class="comment">//还没收到0X0D</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (res == <span class="number">0x0D</span>)</span><br><span class="line">        &#123;</span><br><span class="line">          USART3_RX_STA|= <span class="number">0x40</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">          USART3_RX_BUF[USART3_RX_STA&amp;<span class="number">0x3F</span>] = res;</span><br><span class="line">          USART3_RX_STA++;</span><br><span class="line">          <span class="keyword">if</span> (USART3_RX_STA &gt; U3RxBufferSize<span class="number">-1</span>)<span class="comment">//接收数据错误,重新开始接收</span></span><br><span class="line">          &#123;</span><br><span class="line">            USART3_RX_STA = <span class="number">0</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -474,12 +463,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/04/13/stm32f030水温控制-完/">stm32f030水温控制(完)</a></p>
+  <p><span>本文标题:</span><a href="/2018/04/15/stm8学习笔记-串口/">stm8学习笔记-串口</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Syydnrycx 的个人博客">Syydnrycx</a></p>
-  <p><span>发布时间:</span>2018年04月13日 - 11:04</p>
-  <p><span>最后更新:</span>2018年04月13日 - 12:04</p>
-  <p><span>原始链接:</span><a href="/2018/04/13/stm32f030水温控制-完/" title="stm32f030水温控制(完)">http://yoursite.com/2018/04/13/stm32f030水温控制-完/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/04/13/stm32f030水温控制-完/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年04月15日 - 13:04</p>
+  <p><span>最后更新:</span>2018年04月15日 - 13:04</p>
+  <p><span>原始链接:</span><a href="/2018/04/15/stm8学习笔记-串口/" title="stm8学习笔记-串口">http://yoursite.com/2018/04/15/stm8学习笔记-串口/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/04/15/stm8学习笔记-串口/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -557,7 +546,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/stm32/" rel="tag"><i class="fa fa-tag"></i> stm32</a>
+            <a href="/tags/stm8/" rel="tag"><i class="fa fa-tag"></i> stm8</a>
           
         </div>
       
@@ -570,8 +559,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/基于stm32f030水温控制5/" rel="next" title="基于stm32f030水温控制5">
-                <i class="fa fa-chevron-left"></i> 基于stm32f030水温控制5
+              <a href="/2018/04/15/stm8学习笔记-定时器/" rel="next" title="stm8学习笔记-定时器">
+                <i class="fa fa-chevron-left"></i> stm8学习笔记-定时器
               </a>
             
           </div>
@@ -579,10 +568,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/13/stm32AD采样滤波之中位值平均滤波/" rel="prev" title="stm32AD采样滤波之中位值平均滤波">
-                stm32AD采样滤波之中位值平均滤波 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -739,7 +724,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序"><span class="nav-number">2.</span> <span class="nav-text">程序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#程序框架"><span class="nav-number">2.1.</span> <span class="nav-text">程序框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#框架讲解"><span class="nav-number">2.2.</span> <span class="nav-text">框架讲解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#再次提醒一下-一定要确保你每个子模块都能独立运行"><span class="nav-number">2.3.</span> <span class="nav-text">  再次提醒一下,一定要确保你每个子模块都能独立运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间要求"><span class="nav-number">2.4.</span> <span class="nav-text">时间要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块整合"><span class="nav-number">2.5.</span> <span class="nav-text">模块整合</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#视频"><span class="nav-number">3.</span> <span class="nav-text">视频</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">3.1.</span> <span class="nav-text">补充</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#串口配置"><span class="nav-number">2.</span> <span class="nav-text">串口配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序"><span class="nav-number">3.</span> <span class="nav-text">程序</span></a></li></ol></div>
             
 
           </div>

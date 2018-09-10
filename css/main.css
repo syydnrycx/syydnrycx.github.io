@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b955d4;
+  background: #1d4590;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3109,5 +3109,5 @@ a:hover {
 #sidebar p,
 #sidebar span,
 #sidebar a {
-  color: rgba(153,153,153,0.6) 9;
+  color: #4d4d4d;
 }

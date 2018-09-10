@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf26e9;
+  background: #d1be00;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3094,6 +3094,9 @@ hr {
 .footer-inner {
   color: #69c;
 }
+.header {
+  background: rgba(0,0,0,0.7) none repeat scroll !important;
+}
 body {
   background: url("/images/beijing.jpg");
   background-size: cover;
@@ -3107,6 +3110,7 @@ body {
 .content {
   border-radius: 10px;
   margin-top: 60px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
 a:hover {
   cursor: url("/images/yinxian.png"), auto;

@@ -2001,7 +2001,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #22c116;
+  background: #93ab54;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3091,7 +3091,7 @@ hr {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .footer-inner {
-  color: #ff2a2a;
+  color: #69c;
 }
 body {
   cursor: url("/images/huaji.png"), auto;
@@ -3108,5 +3108,5 @@ a:hover {
 #sidebar p,
 #sidebar span,
 #sidebar a {
-  color: #66f;
+  color: rgba(153,153,153,0.6) 9;
 }

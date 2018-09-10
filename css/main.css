@@ -2001,7 +2001,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c1e3fa;
+  background: #85ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3089,4 +3089,10 @@ hr {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+body {
+  cursor: url("/images/huaji.png"), auto;
+}
+a:hover {
+  cursor: url("/images/yinxian.png"), auto;
 }

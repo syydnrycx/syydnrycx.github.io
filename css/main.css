@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff3444;
+  background: #c7ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3094,8 +3094,11 @@ hr {
 .footer-inner {
   color: #69c;
 }
+.header {
+  background: url("/images/toubu.jpg");
+}
 body {
-  background: url("/images/beijing.png");
+  background: url("/images/beijing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

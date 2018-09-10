@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d1be00;
+  background: #ffbfff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3095,7 +3095,7 @@ hr {
   color: #69c;
 }
 .header {
-  background: rgba(0,0,0,0.7) none repeat scroll !important;
+  background: rgba(255,255,255,0.7) none repeat scroll !important;
 }
 body {
   background: url("/images/beijing.jpg");

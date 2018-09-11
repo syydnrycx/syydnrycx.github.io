@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #09ff2f;
+  background: #ff00e9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3101,7 +3101,7 @@ body {
   background: url("/images/beijing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  backgroung-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   cursor: url("/images/huaji.png"), auto;
 }

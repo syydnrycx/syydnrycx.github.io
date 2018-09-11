@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #57ffc2;
+  background: #3bb99d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3116,7 +3116,7 @@ a:hover {
   cursor: url("/images/yinxian.png"), auto;
 }
 #sidebar {
-  background: url("/images/cebianlan.png");
+  background: url("/images/cebianlan.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

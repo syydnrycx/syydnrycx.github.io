@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4e6a36;
+  background: #09ff2f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3098,6 +3098,11 @@ hr {
   background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
 body {
+  background: url("/images/beijing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backgroung-attachment: fixed;
+  background-position: center;
   cursor: url("/images/huaji.png"), auto;
 }
 .content {

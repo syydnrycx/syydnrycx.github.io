@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="软件安装,stm32," />
+  <meta name="keywords" content="stm32,软件安装," />
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-<meta name="keywords" content="软件安装,stm32">
+<meta name="keywords" content="stm32,软件安装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MDK5环境安装与建立工程模板">
 <meta property="og:url" content="http://yoursite.com/2018/04/15/MDK5环境安装与建立工程模板/index.html">
@@ -726,9 +726,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/软件安装/" rel="tag"><i class="fa fa-tag"></i> 软件安装</a>
-          
             <a href="/tags/stm32/" rel="tag"><i class="fa fa-tag"></i> stm32</a>
+          
+            <a href="/tags/软件安装/" rel="tag"><i class="fa fa-tag"></i> 软件安装</a>
           
         </div>
       
@@ -1140,23 +1140,37 @@
 
     
       <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'syydnrycx',
-            repo: 'My_Comment_Repo',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'e7e8df610b2349785d3f4c111a63f11d289796c8',
-            
-                client_id: '8f8e1ca2695bf9cef02d'
-            }});
-        gitment.render('gitment-container');
-      }
+      // 把当前页面的创建时间page.date转换成 Y-m-d H:i:s
+ function getGitmentId(date)
+  {
+      var pageDate  = new Date(date);
+              Y = pageDate.getFullYear() + '-';
+              M = (pageDate.getMonth()+1 < 10 ? '0'+(pageDate.getMonth()+1) : pageDate.getMonth()+1) + '-';
+              D = pageDate.getDate() + ' ';
+              h = pageDate.getHours() + ':';
+              m = pageDate.getMinutes() + ':';
+              s = pageDate.getSeconds(); 
+      return Y+M+D+h+m+s; 
+  }
+
+  function renderGitment(){
+    var gitment = new Gitmint({
+        // 获取当前页面的创建时间并且转换为 Y-m-d H:i:s 作为唯一标示
+        id:  getGitmentId(1523785446000),   
+        owner: 'syydnrycx',
+        repo: 'My_Comment_Repo',
+        
+        lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+        
+        oauth: {
+        
+        
+            client_secret: 'e7e8df610b2349785d3f4c111a63f11d289796c8',
+        
+            client_id: '8f8e1ca2695bf9cef02d'
+        }});
+    gitment.render('gitment-container');
+  }
 
       
       renderGitment();

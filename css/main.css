@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4b34a7;
+  background: #6ee562;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3093,6 +3093,9 @@ hr {
 }
 .footer-inner {
   color: #69c;
+}
+.header {
+  background: url("/images/header.jpg");
 }
 body {
   cursor: url("/images/huaji.png"), auto;

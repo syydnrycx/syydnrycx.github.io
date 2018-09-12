@@ -404,7 +404,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/04/13/stm32f030水温控制-完/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/04/13/stm32f030水温控制-完/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/13/stm32f030水温控制-完/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -664,11 +664,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
-
   
 
 
@@ -1008,59 +1004,30 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      // 把当前页面的创建时间page.date转换成 Y-m-d H:i:s
- function getGitmentId(date)
-  {
-      var pageDate  = new Date(date);
-              Y = pageDate.getFullYear() + '-';
-              M = (pageDate.getMonth()+1 < 10 ? '0'+(pageDate.getMonth()+1) : pageDate.getMonth()+1) + '-';
-              D = pageDate.getDate() + ' ';
-              h = pageDate.getHours() + ':';
-              m = pageDate.getMinutes() + ':';
-              s = pageDate.getSeconds(); 
-      return Y+M+D+h+m+s; 
-  }
-
-  function renderGitment(){
-    var gitment = new Gitmint({
-        // 获取当前页面的创建时间并且转换为 Y-m-d H:i:s 作为唯一标示
-        id:  getGitmentId(1523589160000),   
-        owner: 'syydnrycx',
-        repo: 'My_Comment_Repo',
-        
-        lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-        
-        oauth: {
-        
-        
-            client_secret: 'e7e8df610b2349785d3f4c111a63f11d289796c8',
-        
-            client_id: '8f8e1ca2695bf9cef02d'
-        }});
-    gitment.render('gitment-container');
-  }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'ShaLfJXU7qnmSvSOuw0GqS2l-gzGzoHsz',
+        appKey: '5B5zIiWfdaV0QHf4qcVGiHFw',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

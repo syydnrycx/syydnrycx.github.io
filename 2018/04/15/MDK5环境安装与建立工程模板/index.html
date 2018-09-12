@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="stm32,软件安装," />
+  <meta name="keywords" content="软件安装,stm32," />
 
 
 
@@ -81,7 +81,7 @@
 
 
 
-<meta name="keywords" content="stm32,软件安装">
+<meta name="keywords" content="软件安装,stm32">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MDK5环境安装与建立工程模板">
 <meta property="og:url" content="https://syydnrycx.github.io/2018/04/15/MDK5环境安装与建立工程模板/index.html">
@@ -462,6 +462,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/15/MDK5环境安装与建立工程模板/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/15/MDK5环境安装与建立工程模板/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -750,9 +760,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/stm32/" rel="tag"><i class="fa fa-tag"></i> stm32</a>
-          
             <a href="/tags/软件安装/" rel="tag"><i class="fa fa-tag"></i> 软件安装</a>
+          
+            <a href="/tags/stm32/" rel="tag"><i class="fa fa-tag"></i> stm32</a>
           
         </div>
       
@@ -806,6 +816,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -1147,6 +1160,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'ShaLfJXU7qnmSvSOuw0GqS2l-gzGzoHsz',
+        appKey: '5B5zIiWfdaV0QHf4qcVGiHFw',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

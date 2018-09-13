@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Android Studio adb shell 无法设置为超级用户的解决方法]]></title>
+    <url>%2F2018%2F09%2F13%2FAndroid-Studio-adb-shell-%E6%97%A0%E6%B3%95%E8%AE%BE%E7%BD%AE%E4%B8%BA%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[前言 在学习郭霖著的《第一行代码》时，其中在 SQLite 数据库存储时要运用 adb shell 访问数据库文件时，无法设置权限为超级管理员权限，为此停滞了好久，后来上网查询后知道 Android7.0 虚拟机没有root权限。 所以我们在 adb shell 执行命令 su 回应 not found 。 解决 既然 Android 7.0 虚拟机无法设置权限，那我们退而求其次使用 Android 6.0的虚拟机 就可以设置超级管理员权限。 所以我们可以进入 Android Virtual Device Manager 新建一个虚拟机，点击 Create Virtual Device.. ，选择一个机型后我们点击 next， 我们下载一个7.0以下的版本，这里我选择了一个 Android 6.0版本 的虚拟机，设置好后，我把我的 app 装在新的虚拟机上，并且在 cmd 上输入 adb shell，这时候我们可以看到从之前的 $：普通管理员，自动的变为 #：超级管理员。假如没有自动设置为 #：超级管理员的话我们可以通过 su 来设置。 到此，设置权限的问题已经解决。]]></content>
+      <categories>
+        <category>Android</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Visual Studio Professional 2015安装]]></title>
     <url>%2F2018%2F09%2F04%2FVisual%20Studio%20Professional%202015%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[Visual Studio Professional 2015安装下载 首先，从我的网盘 密码: iycx，下载镜像文件。 安装 将下载好的.iso镜像文件解压: 后双击解压的.exe文件，开始初始化安装: 设置要安装的文件路径，这里我选择了D盘: 接下来选择我们需要的功能，根据自己的需求选择:【Visual C++】是可选的，如果你希望用C++开发各种类型的应用程序，需要勾选它。【Visual F#】与【python工具】是可选的，开发Android应用程序时需要勾选。【windows和web开发】如果你希望在VS中使用与办公软件交互的功能时需要勾选，不做阐述。【Windows 8.1和Windows Phone 8.0/8.1工具】不推荐勾选，使用很少【常用工具和软件开发工具包】根据需要勾选 确认自己需要的功能后点击下一步，再点击安装: 安装时间漫长，可以冲杯茶休息一下。 安装完毕后，选择开发环境，这里我选择 C#: 等待环境初始化: 完成后，界面弹出: 破解 打开菜单栏的帮助，点击注册产品: 在右边栏显示试用期30天，填写秘钥: HMGNV-WCYXV-X7G9W-YCX63-B98R2 显示如下，则破解OK。]]></content>
@@ -31,8 +44,8 @@
         <category>软件安装</category>
       </categories>
       <tags>
-        <tag>软件安装</tag>
         <tag>stm32</tag>
+        <tag>软件安装</tag>
       </tags>
   </entry>
   <entry>

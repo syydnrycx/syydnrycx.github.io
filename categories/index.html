@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="Syydnrycx" type="application/atom+xml" />
 
@@ -690,7 +692,7 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
@@ -700,8 +702,8 @@
         notify: false,
         appId: '7kuEE6Bp1JMMenCt6xgehk3K-gzGzoHsz',
         appKey: 'PDxq0fG0UPoRShdK9hjmv030',
-        placeholder: 'Login E-mail',
-        avatar:'mm',
+        placeholder: '“评论要填邮箱哦，不然可能收不到回复~”',
+        avatar:'monsterid',
         guest_info:guest,
         pageSize:'10' || 10,
     });

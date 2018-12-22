@@ -53,7 +53,7 @@
   <entry>
     <title><![CDATA[Android Studio adb shell 无法设置为超级用户的解决方法]]></title>
     <url>%2F2018%2F09%2F13%2FAndroid-Studio-adb-shell-%E6%97%A0%E6%B3%95%E8%AE%BE%E7%BD%AE%E4%B8%BA%E8%B6%85%E7%BA%A7%E7%94%A8%E6%88%B7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[前言在学习郭霖著的《第一行代码》时，其中在 SQLite 数据库存储时要运用 adb shell 访问数据库文件时，无法设置权限为超级管理员权限，为此停滞了好久，后来上网查询后知道 Android7.0 虚拟机没有root权限。所以我们在 adb shell 执行命令 su 回应 not found 。解决既然 Android 7.0 虚拟机无法设置权限，那我们退而求其次使用 Android 6.0的虚拟机 就可以设置超级管理员权限。所以我们可以进入 Android Virtual Device Manager 新建一个虚拟机，点击 Create Virtual Device.. ，选择一个机型后我们点击 next，我们下载一个7.0以下的版本，这里我选择了一个 Android 6.0版本 的虚拟机，设置好后，我把我的 app 装在新的虚拟机上，并且在 cmd 上输入 adb shell，这时候我们可以看到从之前的 $：普通管理员，自动的变为 #：超级管理员。假如没有自动设置为 #：超级管理员的话我们可以通过 su 来设置。到此，设置权限的问题已经解决。]]></content>
+    <content type="text"><![CDATA[前言在学习郭霖著的《第一行代码》时，其中在 SQLite 数据库存储时要运用 adb shell 访问数据库文件时，无法设置权限为超级管理员权限，为此停滞了好久，后来上网查询后知道 Android7.0 虚拟机没有root权限。所以我们在 adb shell 执行命令 su 回应 not found 。解决既然 Android 7.0 虚拟机无法设置权限，那我们退而求其次使用 Android 6.0的虚拟机 就可以设置超级管理员权限。所以我们可以进入 Android Virtual Device Manager 新建一个虚拟机，点击 Create Virtual Device..，选择一个机型后我们点击 next，我们下载一个7.0以下的版本，这里我选择了一个 Android 6.0版本 的虚拟机，设置好后，我把我的 app 装在新的虚拟机上，并且在 cmd 上输入 adb shell，这时候我们可以看到从之前的 $：普通管理员，自动的变为 #：超级管理员。假如没有自动设置为 #：超级管理员的话我们可以通过 su 来设置。到此，设置权限的问题已经解决。]]></content>
       <categories>
         <category>Android</category>
         <category>java</category>

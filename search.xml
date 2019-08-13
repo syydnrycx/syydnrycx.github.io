@@ -20,8 +20,8 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>软件</tag>
         <tag>工具</tag>
+        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
@@ -88,7 +88,7 @@
   <entry>
     <title><![CDATA[PADS9.5安装及破解]]></title>
     <url>%2F2018%2F04%2F21%2FPADS9-5%E5%AE%89%E8%A3%85%E5%8F%8A%E7%A0%B4%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[前言好久没更新了,最近好忙好忙的,闲来无事,这一篇就说说怎样安装PADS9.5吧.PADS9.5安装下载安装之前,可以点击 密码: iycx,安装相应软件及破解工具.安装打开下载好的目录,解压里面的’PADS_9-5.part1’和’MentorCrackMaserV2_0_1’,这里我已经解压好了,解压完毕后,打开PADS_9-5文件夹,找到’PADS9.5_mib’,右键属性,在兼容性中勾选以管理员身份运行此程序,然后我们双击运行它,在安装窗口中我们点击’next’,然后点击’skip’,再点击’Agree,接下来,我们先配置下需要安装的东西,这里点击’Modify’,选择’Product Selection’,这里把全部勾选,除了最后的’Server Services’不勾选,然后,我们选择’Target Path’,选择要安装的目录,这里我默认安装在C盘,在最后的一个选项’PADS Projects Path’中选择PADS工程路径,这里我也默认,选择好了安装路径后,我们点击’Done’,确认无误后,我们点击’Install’开始安装,等到进度条走完后,我们选择’at a later time’,先破解后,我们在打开软件.这个时候,桌面就有了安装好的软件.破解我们打开解压’MentorCrackMaserV2_0_1’的目录,找到’MentorCrackMaster’,然后点击浏览,找到我们安装PADS的根目录,这里我刚才安装在C盘,所以C盘里直接选中该路径就可以了,如果你安装在其他盘,一样找到’MentorGraphics’这个目录,然后点击破戒,会弹出窗口,等待即可,破解成功会显示成功界面.修改软件语言我们打开Layout或者Logic其中一个软件,这里我的是中文界面,假设我想要英文界面,这里我们打开工具,找到’自定义’,在选项中,找到界面语言,修改为’English’,更改后会提示重启软件,我们关闭软件重新打开就好了,这个时候软件语言就变为英文的了,结语到这里,基本安装及破解都没有问题了.]]></content>
+    <content type="text"><![CDATA[前言好久没更新了,最近好忙好忙的,闲来无事,这一篇就说说怎样安装PADS9.5吧.PADS9.5安装下载安装之前,可以点击 密码: iycx,安装相应软件及破解工具.安装打开下载好的目录,解压里面的’PADS_9-5.part1’和’MentorCrackMaserV2_0_1’,这里我已经解压好了,解压完毕后,打开PADS_9-5文件夹,找到’PADS9.5_mib’,右键属性,在兼容性中勾选以管理员身份运行此程序,然后我们双击运行它,在安装窗口中我们点击’next’,然后点击’skip’,再点击’Agree,接下来,我们先配置下需要安装的东西,这里点击’Modify’,选择’Product Selection’,这里把全部勾选,除了最后的’Server Services’不勾选,然后,我们选择’Target Path’,选择要安装的目录,这里我默认安装在C盘,在最后的一个选项’PADS Projects Path’中选择PADS工程路径,这里我也默认,选择好了安装路径后,我们点击’Done’,确认无误后,我们点击’Install’开始安装,等到进度条走完后,我们选择’at a later time’,先破解后,我们在打开软件.这个时候,桌面就有了安装好的软件.破解我们打开解压’MentorCrackMaserV2_0_1’的目录,找到’MentorCrackMaster’,然后点击浏览,找到我们安装PADS的根目录,这里我刚才安装在C盘,所以C盘里直接选中该路径就可以了,如果你安装在其他盘,一样找到’MentorGraphics’这个目录,然后点击破戒,会弹出窗口,等待即可,破解成功会显示成功界面.修改软件语言我们打开Layout或者Logic其中一个软件,这里我的是中文界面,假设我想要英文界面,这里我们打开工具,找到’自定义’,在选项中,找到界面语言,修改为’English’,更改后会提示重启软件,我们关闭软件重新打开就好了,这个时候软件语言就变为英文的了.结语到这里,基本安装及破解都没有问题了.]]></content>
       <categories>
         <category>软件安装</category>
       </categories>
